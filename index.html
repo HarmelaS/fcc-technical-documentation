@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>JavaScript Documentation</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header><h1>JavaScript Indroduction</h1></header>
+    <div class="nav-list">
+      <a href="#introduction" class="nav-link">Introduction</a>
+      <a href="#variables" class="nav-link">Variables</a>
+      <a href="#data_types" class="nav-link">Data Types</a>
+      <a href="#conditionals" class="nav-link">Conditionals</a>
+      <a href="#functions" class="nav-link">Functions</a>      
+    </div>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <p>
+        JavaScript is what "makes web pages alive."
+      </p>
+      <p>
+        The programs in this language is called <i>scripts.</i> They can
+        be written right in a web page's HTML and run automatically as the
+        page loads.
+      </p>
+    </section>
+    <section class="main-section" id="variables">
+      <header>Variables</header>
+      <p>
+        A <b>variable</b> is a "named storage" for data. We can use 
+        variables to store goodies, visitors, and other data.
+      </p>
+      <p>
+        Variables aren't the values themselves. That is important to note.
+        They are the <i>containers</i> for the values.
+      </p>
+      <div class="code-bg">
+        <code>
+          let <span class="pink-text">message;</span><br><br>
+          <span class="pink-text">message;</span> = "Hello World";<br><br>
+          alert(<span class="pink-text">message</span>);
+        </code>
+      </div>
+    </section>
+    <section class="main-section" id="data_types">
+      <header>Data Types</header>
+      <p>
+        A value in JavaScript is always a certain type. For example, a 
+        string or a number.
+      </p>
+      <p>
+        There are eight basic data types in JavaScript. We can put any 
+        type into a variable:
+      </p>
+      <ul class="data_type_list">
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Null</li>
+        <li>Undefined</li>
+        <li>Symbol</li>
+        <li>Object</li>
+        <li>BigInt</li>
+      </ul>
+      <div class="code-bg">
+        <code>
+          let <span class="pink-text">message</span> = "Hello" <span class="white-text">//variable is a string</span><br><br>
+          <span class="pink-text">message</span> = 123456; <span class="white-text">//now it is a number</span><br><br>
+          alert(<span class="pink-text">message</span>); <span class="white-text">//1234 will be alerted</span>
+        </code>   
+      </div>
+
+    </section>
+    <section class="main-section" id="conditionals">
+      <header>Conditionals</header>
+      <p>
+        Sometimes, we need to perform different actions based on different 
+        conditions.
+      </p>
+      <p>
+        These conditions can be in the form of an <code>if...else statement</code> 
+        or a <code>switch statement</code>.
+      </p>
+    </section>
+    <section class="main-section" id="functions">
+      <header>Functions</header>
+      <p>
+       Quite often we need to perform a similar action in mnay places of your script.
+      </p>
+      <p>
+        Functions are the main "building blocks" of the program. They allow the code to be 
+        called many times without repetition.
+      </p>
+      <div class="code-bg">
+         <code>
+        <span class="pink-text">if</span> (contition) { <br><br>
+            &nbsp <span class="white-text">//code to run if condition is true</span><br><br>
+        } <span class="pink-text">else</span> { <br><br>
+            &nbsp <span class="white-text">//run some other code instead</span><br><br>
+         }
+      </code>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
